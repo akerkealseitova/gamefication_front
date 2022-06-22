@@ -1,0 +1,100 @@
+.form {
+    padding: 0 48px;
+    @media screen and (max-width: 800px) {
+        padding: 0 24px;
+    }
+    &-group {
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 16px 20px 16px;
+        height: 64px;
+        margin: 24px 0;
+        label {
+            color: #C6D2D2;
+            font-size: 12px;
+        }
+        select {
+            background: #525151;
+            color: #C6D2D2
+        }
+        input[type=email],
+        input[type=password],
+        input[type=text] {
+            box-sizing: border-box;
+            width: 100%;
+            height: 24px;
+            border: none;
+            border-bottom: 1px solid #fff;
+            border-radius: none;
+            color: #fff;
+            font-size: 16px;
+            // line-height: 19px;
+            background: transparent;
+            padding: 3px;
+            padding-bottom: 8px;
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+        .input-errors {
+            height: 16px;
+            .error-msg {
+                font-size: 13px;
+                color: rgb(255, 0, 0);
+            }
+        }
+    }
+    .submit-button {
+        background: #FF9A00;
+        padding: 12px 32px;
+        margin: 8px 0;
+        font-size: 16px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        &:hover {
+            background: #d68711;
+        }
+        &:disabled {
+            background: #ac7727;
+        }
+    }
+    .nav-button {
+        color: #FF9A00;
+        margin-left: 16px;
+        font-size: 16px;
+        text-decoration: none;
+        &:hover {
+            color: #b57a22;
+        }
+    }
+    p {
+        font-size: 14px;
+        @media screen and (max-width: 800px) {
+            font-size: 16px;
+        }
+        color: #C6D2D2;
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: #FF9A00
+            }
+        }
+    }
+    .auth-error {
+        color: rgb(255, 0, 0);
+        margin: 16px 0;
+        font-size: 16px;
+    }
+    &-row {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 16px;
+        >* {
+            margin: 0;
+        }
+    }
+}

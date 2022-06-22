@@ -1,0 +1,35 @@
+.custom-button {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #727171;
+    border-radius: 5px;
+    height: 64px;
+    max-width: 256px;
+    padding: 0 16px;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        background: #242323;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(119, 121, 122, 0.4);
+    }
+    &:disabled {
+        background: rgba(109, 106, 106, 0.5);
+    }
+    @media only screen and (max-width: 850px) {
+        font-size: 16px;
+        max-width: 160px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
